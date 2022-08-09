@@ -1,0 +1,9 @@
+.card__phone-wrap {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 19px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

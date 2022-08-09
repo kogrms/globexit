@@ -1,0 +1,10 @@
+.card__phone-icon {
+  margin: 0;
+  padding: 0;
+  background-image: url(../../../images/smartphone.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 23px;
+  border: none;
+}

@@ -15,17 +15,19 @@
 @import url(../blocks/profile/__info/profile__info.css);
 @import url(../blocks/profile/__name/profile__name.css);
 @import url(../blocks/profile/__position/profile__position.css);
+
 @import url(../blocks/cards/cards.css);
 @import url(../blocks/cards/__container/cards__container.css);
 @import url(../blocks/card/card.css);
-@import url(../blocks/card/__delete/card__delete.css);
-@import url(../blocks/card/__heading/card__heading.css);
-@import url(../blocks/card/__image/card__image.css);
 @import url(../blocks/card/__info/card__info.css);
-@import url(../blocks/card/__likes-container/card__likes-container.css);
-@import url(../blocks/card/__like/card__like.css);
-@import url(../blocks/card/__like/_active/card__like_active.css);
-@import url(../blocks/card/__likes-amount/card__likes-amount.css);
+@import url(../blocks/card/__name/card__name.css);
+@import url(../blocks/card/__phone/card__phone.css);
+@import url(../blocks/card/__phone-wrap/card__phone-wrap.css);
+@import url(../blocks/card/__phone-icon/card__phone-icon.css);
+@import url(../blocks/card/__mail/card__mail.css);
+@import url(../blocks/card/__mail-wrap/card__mail-wrap.css);
+@import url(../blocks/card/__mail-icon/card__mail-icon.css);
+
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
 @import url(../blocks/popup/popup.css);
