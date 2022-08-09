@@ -1,0 +1,13 @@
+.search__name-input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  width: calc(100% - 40px);
+  line-height: 26px;
+}
+
+.search__name-input:focus {
+  outline: none;
+  /* background-color: rgba(227, 238, 240, 0.3); */
+}

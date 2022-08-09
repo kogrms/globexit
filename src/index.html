@@ -3,71 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mesto Russia</title>
+  <title>globexit</title>
 </head>
 <body>
   <div class="page">
-    <header class="header">
+    <!-- <header class="header">
       <div class="header__logo"></div>
-    </header>
+    </header> -->
     <main class="content">
-      <section class="profile">
-        <div class="profile__avatar-container">
-          <button type="button" class="profile__avatar-edit-button" aria-label="Кнопка изменения аватара"></button>
-          <img class="profile__avatar" src="<%=require('./images/avatar_kusto.jpg')%>" alt="Аватар">
+      <section class="search">
+        <div class="search__wrap">
+          <form class="search__form" name="search-form" action="#" method="get">
+            <input id="name-input" type="text" name="name-input" class="search__name-input"
+              autocomplete="off" value="" placeholder="" novalidate/>
+            <button type="submit" class="search__submit-button" aria-label="Кнопка поиска"></button>
+          </form>
         </div>
-        <div class="profile__info">
-          <div class="profile__name-wrap">
-            <h1 class="profile__name">Жак-Ив Кусто</h1>
-            <button type="button" class="profile__edit-button" aria-label="Кнопка редактирования профиля"></button>
-          </div>
-          <p class="profile__position">Исследователь океана</p>
-        </div>
-        <button type="button" class="profile__add-button" aria-label="Кнопка добавления фотографии"></button>
       </section>
       <section class="cards">
         <ul class="cards__container">
+          <li class="card">
+            <h3 class="card__name">Ferdinand Carney</h3>
+            <div class="card__info">
+              <div class="card__phone-wrap">
+                <div class="card__phone-icon"></div>
+                <div class="card__phone">(640) 447-3254</div>
+              </div>
+              <div class="card__mail-wrap">
+                <div class="card__mail-icon"></div>
+                <div class="card__mail">in@aol.net</div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <h3 class="card__name">Deborah Gonzales</h3>
+            <div class="card__info">
+              <div class="card__phone-wrap">
+                <div class="card__phone-icon"></div>
+                <div class="card__phone">1-258-431-9358</div>
+              </div>
+              <div class="card__mail-wrap">
+                <div class="card__mail-icon"></div>
+                <div class="card__mail">hendrerit@icloud.net</div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <h3 class="card__name">Adrienne Mason</h3>
+            <div class="card__info">
+              <div class="card__phone-wrap">
+                <div class="card__phone-icon"></div>
+                <div class="card__phone">1-258-431-9358</div>
+              </div>
+              <div class="card__mail-wrap">
+                <div class="card__mail-icon"></div>
+                <div class="card__mail">erat.eget.ipsum@icloud.ca</div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <h3 class="card__name">Adrienne Mason</h3>
+            <div class="card__info">
+              <div class="card__phone-wrap">
+                <div class="card__phone-icon"></div>
+                <div class="card__phone">1-258-431-9358</div>
+              </div>
+              <div class="card__mail-wrap">
+                <div class="card__mail-icon"></div>
+                <div class="card__mail">erat.eget.ipsum@icloud.ca</div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <h3 class="card__name">Adrienne Mason</h3>
+            <div class="card__info">
+              <div class="card__phone-wrap">
+                <div class="card__phone-icon"></div>
+                <div class="card__phone">1-258-431-9358</div>
+              </div>
+              <div class="card__mail-wrap">
+                <div class="card__mail-icon"></div>
+                <div class="card__mail">erat.eget.ipsum@icloud.ca</div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <h3 class="card__name">Adrienne Mason</h3>
+            <div class="card__info">
+              <div class="card__phone-wrap">
+                <div class="card__phone-icon"></div>
+                <div class="card__phone">1-258-431-9358</div>
+              </div>
+              <div class="card__mail-wrap">
+                <div class="card__mail-icon"></div>
+                <div class="card__mail">erat.eget.ipsum@icloud.ca</div>
+              </div>
+            </div>
+          </li>
         </ul>
       </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
-    </footer>
-    <div class="popup popup_type_edit">
+    </footer> -->
+    <!-- <div class="popup popup_type_edit">
       <div class="popup__container">
         <button type="button" class="popup__close" aria-label="Кнопка закрытия окна редактирования профиля"></button>
         <h2 class="popup__heading">Редактировать профиль</h2>
-        <form class="form" name="edit-form" action="#" method="get" novalidate>
-          <input
-            id="name"
-            type="text"
-            name="name"
-            class="form__input form__input_value_name"
-            autocomplete="off"
-            minlength="2"
-            maxlength="40"
-            required
-            value=""
-            placeholder="Имя"
-          />
-          <span id="name-error" class="form__input-error"></span>
-          <input
-            id="position"
-            type="text"
-            name="position"
-            class="form__input form__input_value_position"
-            autocomplete="off"
-            minlength="2"
-            maxlength="200"
-            required
-            value=""
-            placeholder="О себе"
-          />
-          <span id="position-error" class="form__input-error"></span>
-          <button type="submit" class="form__submit-button" aria-label="Кнопка сохранения изменений профиля">
-            Сохранить
-          </button>
-        </form>
+
       </div>
     </div>
     <div class="popup popup_type_add">
@@ -103,7 +146,7 @@
             Создать</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <div class="popup_type_image popup">
       <div class="popup__container_type_image popup__container">
         <button type="button" class="popup__close_type_image popup__close" aria-label="Кнопка закрытия окна просмотра фотографии"></button>
@@ -111,7 +154,7 @@
         <h2 class="popup__caption"></h2>
       </div>
     </div>
-    <div class="popup popup_type_confirm">
+    <!-- <div class="popup popup_type_confirm">
       <div class="popup__container">
         <button type="button" class="popup__close" aria-label="Кнопка закрытия окна подтверждения"></button>
         <h2 class="popup__heading">Вы уверены?</h2>
@@ -141,17 +184,19 @@
             Сохранить</button>
         </form>
       </div>
-    </div>
+    </div> -->
   </div>
   <template id="card-template" class="card-template">
     <li class="card">
-      <button type="button" class="card__delete" aria-label="Кнопка удаления фотографии"></button>
-      <img class="card__image" src="#" alt="">
+      <h3 class="card__name"></h3>
       <div class="card__info">
-        <h3 class="card__heading"></h3>
-        <div class="card__likes-container">
-          <button type="button" class="card__like" aria-label="Кнопка оценки фотографии"></button>
-          <p class="card__likes-amount">0</p>
+        <div class="card__phone-wrap">
+          <div class="card__phone-icon"></div>
+          <div class="card__phone"></div>
+        </div>
+        <div class="card__mail-wrap">
+          <div class="card__mail-icon"></div>
+          <div class="card__mail"></div>
         </div>
       </div>
     </li>

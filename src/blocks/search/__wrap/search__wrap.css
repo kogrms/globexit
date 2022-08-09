@@ -1,0 +1,13 @@
+.search__wrap {
+  margin: 0;
+  padding: 0;
+  width: calc(100% - 40px);
+  height: 52px;
+  border: none;
+  border: 1px solid #e3eef0;
+  border-radius: 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

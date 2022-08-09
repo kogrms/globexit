@@ -2,14 +2,14 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, 282px);
+  grid-template-columns: repeat(3, 374px);
   justify-content: center;
-  column-gap: 17px;
+  column-gap: 20px;
   row-gap: 20px;
   width: 100%;
 }
 
-@media (max-width: 917px) {
+/* @media (max-width: 917px) {
   .cards__container {
     grid-template-columns: repeat(2, 282px);
   }
@@ -19,4 +19,4 @@
   .cards__container {
     grid-template-columns: 282px;
   }
-}
+} */
