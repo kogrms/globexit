@@ -1,4 +1,6 @@
 .popup__values {
   margin: 0;
   padding: 0;
+  list-style: none;
+  max-width: 290px;
 }

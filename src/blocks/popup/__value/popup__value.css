@@ -1,4 +1,8 @@
 .popup__value {
   margin: 0;
   padding: 0;
+  color: #868b8f;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
