@@ -32,13 +32,13 @@
 //   }
 // ];
 
-export const validationObject = {
-  formSelector: ".form",
-  inputSelector: ".form__input",
-  submitButtonSelector: ".form__submit-button",
-  inactiveButtonClass: "form__submit-button_inactive",
-  inputErrorClass: "form__input_type_error",
-};
+// export const validationObject = {
+//   formSelector: ".form",
+//   inputSelector: ".form__input",
+//   submitButtonSelector: ".form__submit-button",
+//   inactiveButtonClass: "form__submit-button_inactive",
+//   inputErrorClass: "form__input_type_error",
+// };
 
 // const popupEdit = document.querySelector('.popup_type_edit');
 // const popupAdd = document.querySelector('.popup_type_add');

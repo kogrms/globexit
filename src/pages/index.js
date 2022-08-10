@@ -19,7 +19,10 @@ import {
   profileAvatar,
 } from "../utils/constants.js";
 
-import { myId } from "../utils/myId";
+const popup = document.querySelector(".popup");
+const cardsContainer = document.querySelector(".cards__container");
+
+import { req } from "../utils/req";
 
 import { Card } from "../components/Card.js";
 import { FormValidator } from "../components/FormValidator.js";
@@ -30,6 +33,22 @@ import { PopupWithImage } from "../components/PopupWithImage.js";
 import { PopupWithConfirmation } from "../components/PopupWithConfirmation";
 import { Api } from "../components/Api";
 
+const api = new Api(req);
+api
+  .getInitialCards()
+  .then((cards) => {
+    console.log(cards);
+    // userInfo.setUserAvatar(data.avatar);
+    // userInfo.setUserInfo(data.name, data.about);
+    cardList.renderItems(cards.reverse());
+    // cards.forEach((item) => {
+    //   cardList.addItem(item);
+    // });
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
 // function showLoading(isLoading, button, defaultText) {
 //   if (isLoading) {
 //     button.textContent = "Сохранение...";
@@ -38,59 +57,25 @@ import { Api } from "../components/Api";
 //   }
 // }
 
-// function createCard(item) {
-//   const card = new Card(
-//     item,
-//     ".card-template",
-//     like,
-//     dislike,
-//     currentId,
-//     () => {
-//       confirmPopup.open();
-//       confirmPopup.handleConfirm(() => {
-//         showLoading(true, popupConfirmSubmit);
-//         api
-//           .deleteCard(item._id)
-//           .then(() => card.deleteCard())
-//           .then(confirmPopup.close.bind(confirmPopup))
-//           .catch((err) => console.log(err))
-//           .finally(() => {
-//             showLoading(false, popupConfirmSubmit, "Да");
-//           });
-//       });
-//     },
-//     () => {
-//       imagePopup.open({ name: item.name, link: item.link });
-//     }
-//   );
+function createCard(item) {
+  const card = new Card(item, ".card-template", () => {
+    popup.open({ name: item.name, link: item.link });
+  });
 
-//   const cardElement = card.generateCard();
-//   return cardElement;
-// }
+  const cardElement = card.generateCard();
+  return cardElement;
+}
 
-// const cardList = new Section(
-//   {
-//     renderer: (item) => {
-//       cardList.addItem(createCard(item));
-//     },
-//   },
-//   ".cards__container"
-// );
+const cardList = new Section(
+  {
+    renderer: (item) => {
+      cardList.addItem(createCard(item));
+    },
+  },
+  ".cards__container"
+);
 
 // const userInfo = new UserInfo(profileName, profilePosition, profileAvatar);
-
-const api = new Api(myId);
-api
-  .getInitialCards()
-  .then((cards) => {
-    console.log(cards);
-    // userInfo.setUserAvatar(data.avatar);
-    // userInfo.setUserInfo(data.name, data.about);
-    // cardList.renderItems(cards.reverse());
-  })
-  .catch((err) => {
-    console.log(err);
-  });
 
 // const like = (id) => api.like(id);
 // const dislike = (id) => api.dislike(id);
