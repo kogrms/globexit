@@ -1,7 +1,6 @@
 import "./index.css";
 import { formSearch, inputName } from "../utils/constants.js";
 import { request } from "../utils/request";
-
 import { Card } from "../components/Card.js";
 import { Section } from "../components/Section.js";
 import { Popup } from "../components/Popup.js";
