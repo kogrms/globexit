@@ -1,8 +1,23 @@
 .popup__value {
   margin: 0;
   padding: 0;
+  margin-bottom: 24px;
   color: #868b8f;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.popup__value_phone {
+  text-decoration: underline;
+}
+
+.popup__value_email {
+  text-decoration: underline;
+}
+
+@media (max-width: 530px) {
+  .popup__value {
+    margin-bottom: 14px;
+  }
 }

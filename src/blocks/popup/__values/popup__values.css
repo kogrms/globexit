@@ -4,3 +4,9 @@
   list-style: none;
   max-width: 290px;
 }
+
+@media (max-width: 530px) {
+  .popup__values {
+    max-width: 70%;
+  }
+}

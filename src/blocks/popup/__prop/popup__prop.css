@@ -1,4 +1,11 @@
 .popup__prop {
   margin: 0;
   padding: 0;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 530px) {
+  .popup__prop {
+    margin-bottom: 14px;
+  }
 }

@@ -17,3 +17,10 @@
   opacity: 0;
   transition: visibility 0.3s, opacity 0.3s ease-in;
 }
+
+@media (max-width: 800px) {
+  .popup {
+    padding: 0;
+    justify-content: center;
+  }
+}

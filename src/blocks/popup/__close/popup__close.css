@@ -19,21 +19,11 @@
   transition: background-size 100ms ease-in-out;
 }
 
-/* @media (max-width: 548px) {
+@media (max-width: 627px) {
   .popup__close {
-    width: 20px;
-    height: 20px;
-    top: -36px;
-    right: -36px;
+    right: calc(50% - 20px);
   }
 }
-
-@media (max-width: 524px) {
-  .popup__close {
-    top: -36px;
-    right: 0;
-  }
-} */
 
 .popup__close:hover {
   opacity: 0.92;

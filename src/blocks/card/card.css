@@ -13,8 +13,7 @@
   background-color: #fff;
   border-radius: 20px;
   overflow: hidden;
-  /* box-shadow: 0px 20px 30px 15px rgba(111, 103, 129, 0.04); */
-  box-shadow: 0px 20px 30px 15px rgba(111, 103, 129, 0.9);
+  box-shadow: 0px 20px 30px 15px rgba(111, 103, 129, 0.05);
   box-sizing: border-box;
 }
 

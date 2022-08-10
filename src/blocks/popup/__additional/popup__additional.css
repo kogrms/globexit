@@ -1,7 +1,17 @@
 .popup__additional {
   margin: 0;
   padding: 0;
-  font-size: 13px;
-  line-height: 14px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 17px;
   color: #868b8f;
+}
+
+@media (max-width: 530px) {
+  .popup__additional {
+    font-size: calc(100vw * 0.03);
+    line-height: calc(100vw * 0.031);
+    margin-bottom: 20px;
+  }
 }

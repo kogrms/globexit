@@ -2,9 +2,17 @@
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 15px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 17px;
   width: 100%;
+}
+
+@media (max-width: 530px) {
+  .popup__info {
+    font-size: calc(100vw * 0.03);
+    line-height: calc(100vw * 0.031);
+  }
 }
